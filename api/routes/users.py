@@ -63,3 +63,4 @@ def get_all_users(db: Session = Depends(get_db)):
     if not users:
         raise HTTPException(status_code=404, detail="No users found.")
     return users
+
